@@ -17,20 +17,26 @@ function Header({ isOpen, onOpen, onClose }: HeaderProps) {
         </div>
         {isOpen ? (
           <nav className="header-nav">
-            <a onClick={onClose} className="header-close">
-              <FontAwesomeIcon icon="times" size="2x" />
-            </a>
+            <div onClick={onClose} className="header-close">
+              <FontAwesomeIcon
+                className="header-times"
+                icon="times"
+                size="2x"
+              />
+            </div>
             <ul className="header-links">
-              <li>
+              <li className="header-category">
                 <a href="/books">Book</a>
+                <a href="#">Record</a>
+                <a href="#">DVD</a>
               </li>
             </ul>
           </nav>
         ) : (
-          <a onClick={onOpen} className="header-menu" href="#">
+          <div onClick={onOpen} className="header-menu">
             <FontAwesomeIcon icon="bars" />
             <span className="header-menu-text">Menu</span>
-          </a>
+          </div>
         )}
       </header>
     </>
