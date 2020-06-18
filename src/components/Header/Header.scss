@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  text-align: center;
+  margin-top: 1.5%;
+  justify-content: space-between;
+  height: 4%;
+  align-items: center;
+}
+
+.header-logo {
+  margin-left: 1%;
+  font-size: 1.5rem;
+}
+
+.header-menu {
+  margin-right: 1%;
+  font-size: 1.2rem;
+}
+
+.fa-bars {
+  margin: 0 0.5em 0 0;
+}
+
+.header-nav {
+  background-color: red;
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  padding: 3% 2%;
+  width: 15%;
+}

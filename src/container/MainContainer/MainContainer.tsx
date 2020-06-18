@@ -1,12 +1,9 @@
 import * as React from "react";
 import MainComponent from "components/MainComponent/MainComponent";
+import Header from "components/Header/Header";
 
 function MainContainer() {
-  return (
-    <div>
-      <MainComponent />
-    </div>
-  );
+  return <>{/* <MainComponent /> */}</>;
 }
 
 export default MainContainer;
